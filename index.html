@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Text Transformer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Text Transformer</h1>
+    <textarea id="inputText" placeholder="Enter up to 1000 words..."></textarea>
+    <div class="counter" id="wordCount">0 / 1000 words</div>
+    <div class="error" id="error"></div>
+
+    <div class="theme-selector">
+      <label for="themeSelect">Select Theme:</label>
+      <select id="themeSelect" onchange="applyTheme()">
+        <option value="">Default</option>
+        <option value="dark-theme">Dark</option>
+        <option value="solarized-light">Solarized Light</option>
+        <option value="dracula">Dracula</option>
+        <option value="forest">Forest</option>
+        <option value="cyberpunk">Cyberpunk</option>
+      </select>
+    </div>
+
+    <div class="controls">
+      <button onclick="transformText('uppercase')">UPPERCASE</button>
+      <button onclick="transformText('lowercase')">lowercase</button>
+      <button onclick="transformText('capitalize')">Capitalize Each Word</button>
+      <button onclick="transformText('sentence')">Sentence case</button>
+      <button onclick="transformText('alternating')">aLtErNaTiNg CaSe</button>
+      <button onclick="transformText('inverse')">iNVERSE CASE</button>
+      <button onclick="resetText()">Reset</button>
+    </div>
+
+    <div class="output-controls">
+      <button onclick="copyText()">Copy to Clipboard</button>
+      <button onclick="exportText()">Export as .txt</button>
+    </div>
+
+    <div style="margin-top: 2rem; text-align: center;">
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+        data-ad-slot="1234567890"
+        data-ad-format="auto"></ins>
+    </div>
+  </div>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

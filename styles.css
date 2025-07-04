@@ -1,0 +1,78 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --primary-color: #007BFF;
+}
+.dark-theme {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  --primary-color: #1e90ff;
+}
+.solarized-light {
+  --bg-color: #fdf6e3;
+  --text-color: #657b83;
+  --primary-color: #268bd2;
+}
+.dracula {
+  --bg-color: #282a36;
+  --text-color: #f8f8f2;
+  --primary-color: #bd93f9;
+}
+.forest {
+  --bg-color: #f0fff4;
+  --text-color: #2f4f4f;
+  --primary-color: #228B22;
+}
+.cyberpunk {
+  --bg-color: #0f0f0f;
+  --text-color: #ff00ff;
+  --primary-color: #00ffff;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0.25rem;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+.controls, .output-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.theme-selector {
+  text-align: center;
+  margin: 1rem;
+}
+.counter {
+  text-align: right;
+}
+.error {
+  color: red;
+  font-weight: bold;
+}
