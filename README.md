@@ -1,5 +1,5 @@
 # textshift
-🪄 Text Transformer — Simple & Clean Web App to Format Text Instantly
+Textshift — Simple & Clean Web App to Format Text Instantly
 
 Short description
 A lightweight, modern web app that transforms user input into different text styles (uppercase, lowercase, sentence case, etc). Includes word limit control, copy/export options, and dark mode. No backend, no dependencies — ready to deploy.
